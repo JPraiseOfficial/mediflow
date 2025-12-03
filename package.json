@@ -1,7 +1,7 @@
 {
-  "name": "hospital-management-system",
+  "name": "mediflow",
   "version": "1.0.0",
-  "description": "This is a personal project to mange the operations of an hospital/clinic",
+  "description": "This is an app that digitise the operations in an hospital/clinic. It helps to keep records of staff and patients and allow all the core processes of the hospital/clinic to be done seamlessly",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
