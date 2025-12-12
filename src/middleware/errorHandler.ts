@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
-import AppError from "../utils/appError.js";
+import AppError from "../utils/AppError.js";
 
 export default function globalErrorHandler(
   err: AppError,
@@ -14,6 +14,7 @@ export default function globalErrorHandler(
   if (err.isOperational) {
     return res.status(err.statusCode).json({
       error: err.message,
+      details: err.details,
     });
   }
 

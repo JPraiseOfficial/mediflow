@@ -24,7 +24,7 @@ model User {
   id        Int       @id @default(autoincrement())
   email     String    @unique
   password  String    
-  Role      Role     
+  role      Role     
   createdAt DateTime  @default(now())
 }
 
