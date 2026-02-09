@@ -38,7 +38,7 @@
     "@eslint/js": "^9.18.0",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
-    "@nestjs/testing": "^11.0.1",
+    "@nestjs/testing": "^11.1.13",
     "@swc/cli": "^0.7.9",
     "@swc/core": "^1.15.8",
     "@types/bcrypt": "^6.0.0",
@@ -51,6 +51,7 @@
     "eslint-plugin-prettier": "^5.2.2",
     "globals": "^16.0.0",
     "jest": "^30.0.0",
+    "jest-mock-extended": "^4.0.0",
     "prettier": "^3.4.2",
     "prisma": "^7.2.0",
     "source-map-support": "^0.5.21",
@@ -63,6 +64,9 @@
     "typescript-eslint": "^8.20.0"
   },
   "jest": {
+    "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  },
     "moduleFileExtensions": [
       "js",
       "json",
